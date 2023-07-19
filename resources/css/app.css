@@ -1,0 +1,6 @@
+@import "components/button.scss";
+@import "components/fileUpload.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
