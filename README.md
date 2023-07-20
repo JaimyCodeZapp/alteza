@@ -52,3 +52,5 @@ MAIL_ENCRYPTION=tls
 ```
 ./vendor/bin/sail php artisan migrate:fresh --seed
 ```
+
+Once the data has been seeded 3 users will have been created with different roles and permissions. The credentials for these test users can be found in the `UserSeeder`
