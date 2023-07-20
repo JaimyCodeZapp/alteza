@@ -68,4 +68,15 @@ class UserController extends Controller
         return Redirect::route('users.edit', ['id' => $user->id]);
     }
 
+    /**
+     * Delete a user
+     */
+    public function destroy(Request $request, string $id): RedirectResponse
+    {
+        $user = User::find($id);
+        $user->roles()->detach();
+        $user->delete();
+
+        return Redirect::route('users');
+    }
 }

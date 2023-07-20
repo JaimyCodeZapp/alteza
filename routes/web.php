@@ -47,6 +47,7 @@ Route::middleware('auth')->group(function () {
             Route::group(['middleware' => 'permission:edit_users'],function(){
                 Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
                 Route::patch('/users/edit', [UserController::class, 'update'])->name('users.update');
+                Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
             });
         });
 
