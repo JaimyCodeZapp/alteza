@@ -1,6 +1,12 @@
 ## Setup
 
-After cloning the repo you have to follow the following steps to setup the application locally
+After cloning the repo follow these steps to setup the application locally. The application will be accessible on http://alteza.test and the admin dashboard on http://alteza.test/admin.
+
+### Prerequisites
+
+-   Composer
+-   Docker
+-   Docker Compose
 
 #### Install composer dependencies
 
